@@ -1,0 +1,6 @@
+{
+  "name": "Tahta Dünyası",
+  "description": "Tahtaları kullan, dünyayı çalıştır! Profesyonel 2D fizik ve inşa bulmacası oyunu.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

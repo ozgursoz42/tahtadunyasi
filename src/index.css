@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+@layer base {
+  * {
+    -webkit-tap-highlight-color: transparent;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    touch-action: none;
+    overscroll-behavior: none;
+  }
+
+  h1, h2, h3, .font-display {
+    font-family: 'Outfit', 'Plus Jakarta Sans', sans-serif;
+  }
+}
+
+/* Custom wooden & game tactile styling */
+.wood-panel {
+  background: linear-gradient(180deg, #4a3319 0%, #34210d 50%, #251608 100%);
+  border: 2px solid #6b4c2b;
+  box-shadow: inset 0 2px 0 rgba(255, 255, 255, 0.15), 0 8px 24px rgba(0, 0, 0, 0.45);
+}
+
+.wood-button {
+  background: linear-gradient(180deg, #b87b38 0%, #8c531d 50%, #68380e 100%);
+  border: 2px solid #e0aa6a;
+  box-shadow: inset 0 2px 0 rgba(255, 255, 255, 0.35), 0 4px 10px rgba(0, 0, 0, 0.3);
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+}
+
+.wood-button:active {
+  transform: translateY(2px);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.green-run-button {
+  background: linear-gradient(180deg, #34d399 0%, #10b981 40%, #059669 100%);
+  border: 2px solid #6ee7b7;
+  box-shadow: inset 0 3px 0 rgba(255, 255, 255, 0.5), 0 6px 20px rgba(16, 185, 129, 0.4);
+  text-shadow: 0 1px 2px rgba(6, 78, 59, 0.6);
+}
+
+.green-run-button:active {
+  transform: translateY(2px) scale(0.99);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3), 0 2px 8px rgba(16, 185, 129, 0.3);
+}
+
+/* Custom scrollbars for piece trays */
+::-webkit-scrollbar {
+  height: 6px;
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(43, 27, 12, 0.5);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(184, 123, 56, 0.6);
+  border-radius: 9999px;
+}
